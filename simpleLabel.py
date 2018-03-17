@@ -63,10 +63,10 @@ class ImgLib(object):
         if name in ImgLib.imgDict:
             return ImgLib.imgDict[name].copy()
         else:
-            print "image, " + name + " not found"
+            print("image, " + name + " not found")
 
 def initImgLib():
     ImgLib()
 
 if __name__ == '__main__':
-    print "module intended for import only"
+    print("module intended for import only")

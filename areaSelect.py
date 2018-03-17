@@ -298,7 +298,7 @@ class ImgLib(object):
         if name in ImgLib.imgDict:
             return ImgLib.imgDict[name].copy()
         else:
-            print "image, " + name + " not found"
+            print("image, " + name + " not found")
 
 class SelectScreen(object):
     """ screen to select stages in story mode """

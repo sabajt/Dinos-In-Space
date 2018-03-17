@@ -121,7 +121,7 @@ class SoundPlayer(object):
                 self.sndBounceList.append(sound)
 
         except:
-            print "ERROR: could not load sounds"
+            print("ERROR: could not load sounds")
 
     def playSound(self, sound):
         """ play sounds based on request type """
@@ -238,4 +238,4 @@ def wipe():
     GameSoundManager.wipe()
 
 if __name__ == "__main__":
-    print "module for import only"
+    print("module for import only")

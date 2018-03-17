@@ -12,4 +12,4 @@ def updateIfMethod(e):
             s.updateMessage()
 
 if __name__ == '__main__':
-    print "module intended for import only"
+    print("module intended for import only")

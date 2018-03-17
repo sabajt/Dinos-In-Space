@@ -758,7 +758,7 @@ class StaticArrowL(StaticArrow):
                     if spr != self and spr.location == self.location:
                         self.image.set_alpha(0, pygame.RLEACCEL)
         else:
-            print "StaticArrowL state not recognized"
+            print("StaticArrowL state not recognized")
 
     def loadImages(self):
         """ load images for color change and empty frame """
@@ -981,9 +981,9 @@ class GoalCounter(infoGraphic56.InfoGraphic):
 
         GoalCounter.gCounterGroup = pygame.sprite.RenderUpdates()
 
-def gridToCoord((xGridLoc, yGridLoc)):
+def gridToCoord(xxx_todo_changeme):
     """ returns: coordinate pair for playing field """
-
+    (xGridLoc, yGridLoc) = xxx_todo_changeme
     xDist = xGridLoc * 100
     yDist = yGridLoc * 100
     tx, ty = radar56.Radar.getTrackerLoc()
@@ -1069,4 +1069,4 @@ def freezeRocks(freeze):
 
 
 if __name__ == "__main__":
-    print "module for import only"
+    print("module for import only")

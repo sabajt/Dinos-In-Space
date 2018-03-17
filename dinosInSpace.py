@@ -699,7 +699,7 @@ class Game(object):
 
     def talk(self):
         """ a debugging method, press "p" to print stuff """
-        print "message"
+        print("message")
 
 def loadImage(fileName, scaleTo=None, getAt=None, alpha=None, cwd=None):
     """ returns image surface - give str '2X' or '4X' or float 0 to 1+ """
@@ -711,7 +711,7 @@ def loadImage(fileName, scaleTo=None, getAt=None, alpha=None, cwd=None):
     try:
         image = pygame.image.load(filePath)
     except:
-        print "error: failed to load image file " + fileName
+        print("error: failed to load image file " + fileName)
 
     image = image.convert()
 
@@ -738,7 +738,7 @@ def configMixer():
 ##        pygame.mixer.pre_init(frequency=22050, size=-16, channels=1, buffer=2048)
         pygame.mixer.pre_init(22050, -8, 1, 2048)
     else:
-        print "problem loading pygame.mixer"
+        print("problem loading pygame.mixer")
 
 class FontBank(object):
     """ preloads fonts at all sizes for global access """
@@ -807,7 +807,7 @@ class FontBank(object):
                 return FontBank.STDFONTS[key]
             else:
                 return FontBank.EDITFONTS[key]
-        print "ERROR: font bank not initiated"
+        print("ERROR: font bank not initiated")
 
 ##pygame.init()
 ##FontBank()

@@ -391,13 +391,10 @@ class NyanCat(FloatingBkg):
                 self.currentFrame = 0
             self.image = NyanCat.frames[self.currentFrame]
 
-
     def checkWrap(self):
-	"""
-	    specialized wrap method for nyan cats
-	    - only handles going off right side of field
-	    - moves to left side and shifts y axis to an open point (not in queue)
-	"""
+        """ specialized wrap method for nyan cats
+        - only handles going off right side of field
+        - moves to left side and shifts y axis to an open point (not in queue) """
         (rBoxX, rBoxY) = radar56.Radar.getTrackerLoc()
 
         if self.rect.left - rBoxX > scroller56.Scroller.fieldWidth:
@@ -564,4 +561,4 @@ def wipe():
 
 if __name__ == "__main__":
 
-    input("module for import only")
+    eval(input("module for import only"))

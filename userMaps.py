@@ -201,7 +201,7 @@ class UserLauncher(object):
         elif group == "CURSOR":
             UserLauncher.me.cursorGroup.add(spr)
         else:
-            print "addSpriteToGroup error: unrecognized group"
+            print("addSpriteToGroup error: unrecognized group")
 
     @staticmethod
     def addFB(obj):

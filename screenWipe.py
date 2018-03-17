@@ -27,7 +27,7 @@ class ImgLib(object):
         if name in ImgLib.imgDict:
             return ImgLib.imgDict[name].copy()
         else:
-            print "image, " + name + " not found"
+            print("image, " + name + " not found")
 
 def wipe(_fps, imageFrom, imageTo, direction):
     """ imageTo slides over imageFrom in the direction indicated

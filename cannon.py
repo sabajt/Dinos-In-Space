@@ -206,4 +206,4 @@ class Flyer(pygame.sprite.Sprite):
         self.kill()
 
 if __name__ == '__main__':
-    print "module meant for import only"
+    print("module meant for import only")

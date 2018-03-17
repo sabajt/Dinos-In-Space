@@ -239,4 +239,4 @@ def wipe():
 
 if __name__ == "__main__":
 
-    print "module for import only"
+    print("module for import only")

@@ -460,7 +460,7 @@ class Editor(object):
         elif group == "L1b": group = self.editGroupL1b
         elif group == "L2": group = self.editGroupL2
         else:
-            print group + " is not a valid group"
+            print(group + " is not a valid group")
 
         foundObjs = []
 
@@ -1860,7 +1860,7 @@ class EditorInterface(pygame.sprite.Sprite):
 
         if unitName not in self.unitDict:
 
-            print "error: must create UnitSelect for this unit first"
+            print("error: must create UnitSelect for this unit first")
 
         else:
 
@@ -1901,7 +1901,7 @@ class EditorInterface(pygame.sprite.Sprite):
 
             else:
 
-                print "rb_type not recognized"
+                print("rb_type not recognized")
 
             # if first position unitSelect under this rb and select
 

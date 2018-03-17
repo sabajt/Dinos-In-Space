@@ -376,7 +376,7 @@ class SpawnInfoBox(pygame.sprite.Sprite):
         # get number of slots (full + empty) to be displayed on box / create key
         dinoCount = 0
 
-        for slot in range(slotList[-1]):
+        for slot in xrange(slotList[-1]):
             if (slot + 1) in slotList: # if slot has a dino match
                 color = myData[dinoCount][2]
                 dinoCount += 1

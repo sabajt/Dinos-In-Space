@@ -195,7 +195,7 @@ class ImgLib(object):
         if name in ImgLib.imgDict:
             return ImgLib.imgDict[name].copy()
         else:
-            print "image " + str(name) + " not found"
+            print("image " + str(name) + " not found")
 
 class SnaxWorld(object):
     """ state that runs the snax screen """
@@ -235,7 +235,7 @@ class SnaxWorld(object):
         elif group == "CURSOR":
             SnaxWorld.me.cursorGroup.add(spr)
         else:
-            print group + " is an unrecognized group, spr not added"
+            print(group + " is an unrecognized group, spr not added")
 
     @staticmethod
     def addSpriteListToGroup(sprList, group):

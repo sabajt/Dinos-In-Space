@@ -400,7 +400,7 @@ class TweenMenu(TweenLeader):
             assert(self.dclVal > 0)
             self.dclLim = self.speed * self.limVar
         else:
-            print "dclMode must be 'LIN' or 'EXP'"
+            print("dclMode must be 'LIN' or 'EXP'")
 
     def decel(self):
         if self.dclMode == "EXP":

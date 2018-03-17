@@ -24,7 +24,7 @@ class ScreenCamera(object):
             elif type(scaleToOrBy) is tuple:
                 newSurf = pygame.transform.smoothscale(newSurf, scaleToOrBy)
             else:
-                print "'scaleToOrBy' incorrectly specified, image is not being scaled "
+                print("'scaleToOrBy' incorrectly specified, image is not being scaled ")
 
         dataStorage56.saveDynamicImage(newSurf, sourceName, editOrPlay)
 

@@ -35,7 +35,7 @@ def findNewMaps():
     os.chdir("..")
 
     for f in os.listdir("."):
-        print f
+        print(f)
 
     os.chdir("Contents")
     os.chdir("Resources")
@@ -444,5 +444,5 @@ def getMilestone(profileName):
 
 def track(f_name):
     if TRACK:
-        print ">>>>>>>>>>>>>>>> " + f_name + " ran"
+        print(">>>>>>>>>>>>>>>> " + f_name + " ran")
 

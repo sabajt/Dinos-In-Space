@@ -2,7 +2,7 @@
     - the dino classes
 """
 if __name__ == "__main__":
-    print "module for import only"
+    print("module for import only")
 
 import pygame
 import math
@@ -424,7 +424,7 @@ class DinoStandard(Dino):
         elif objColor == "yellow":
             colorIndex = 3
         else:
-            print "color not recognized\n"
+            print("color not recognized\n")
 
         return colorIndex
 
