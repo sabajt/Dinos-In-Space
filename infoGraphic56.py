@@ -363,8 +363,6 @@ class SpawnInfoBox(pygame.sprite.Sprite):
         num = 0
         DSTEP = 25
 
-        import pdb; pdb.set_trace() # add pdb here
-
         # collect data sets from dinoData that match this spawn
         myData = [] # extracted whole dino data sets for this spawn
         slotList = [] # just the slot number, from this spawn
@@ -378,7 +376,7 @@ class SpawnInfoBox(pygame.sprite.Sprite):
         # get number of slots (full + empty) to be displayed on box / create key
         dinoCount = 0
 
-        slotRange = range(slotList[-1])
+        slotRange = range(int(slotList[-1]))
         for slot in list(slotRange):
             if (slot + 1) in slotList: # if slot has a dino match
                 color = myData[dinoCount][2]
