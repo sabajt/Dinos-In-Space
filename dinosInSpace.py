@@ -824,7 +824,7 @@ def main():
     R_800 = (800, 600)
     FS = pygame.FULLSCREEN
 
-    screen = pygame.display.set_mode(R_800) # resolution / fullscreen tag <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< FULLSCREEN
+    screen = pygame.display.set_mode(R_800, pygame.FULLSCREEN) # resolution / fullscreen tag <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< FULLSCREEN
     soundFx56.SoundPlayer()
     modeSwitch.ModeSwitch() # keeps track of bonus modes
     fpsSwitch.FPSSwitch() # controls frames per second
